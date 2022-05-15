@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: 6de4fcb99a2cb504c98b3331d3558c37
+  - enabled: 1
+    path: Assets/Scenes/Perdiste.unity
+    guid: 650d8223af0e3f843a1331e71ee78aa5
+  - enabled: 1
+    path: Assets/Scenes/Ganaste.unity
+    guid: 6b2b88bc42c1e864f8c92177b716c689
   m_configObjects: {}

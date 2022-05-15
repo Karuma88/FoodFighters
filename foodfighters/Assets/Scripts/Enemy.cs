@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
 {
@@ -27,6 +28,18 @@ public class Enemy : MonoBehaviour
     {
         Comportamiento_Enemigo();
         Final_Ani();
+
+    }
+
+    void Update()
+    {
+        if (transform.position.y < -8.0f)
+        {
+            Destroy(gameObject);
+            Destroy(this);
+            Destroy(GetComponent<Rigidbody>());
+
+        }
     }
 
     public void Comportamiento_Enemigo()
